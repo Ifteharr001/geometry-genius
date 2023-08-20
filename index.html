@@ -57,21 +57,43 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle card -->
+                <!-- Parallelogram card -->
                 <div class="card card-compact bg-base-100 shadow-xl pt-4 bg-rose-900 text-white">
-                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body items-center mt-">
-                        <h2 class="card-title text-3xl">Triangle</h2>
-                        <p class="text-xl mb-4">Area (A) = 0.5 X b X h</p>
+                        <h2 class="card-title text-3xl">Parallalogram</h2>
+                        <p class="text-xl mb-4">Area (A) = b X h</p>
                         <p class="mb-6">
-                            <input id="triangle-base" class="border text-xl w-24 px-2 text-black bg-gray-200 rounded-md" placeholder="base" type="text">
+                            <!-- parallelogram base -->
+                            <input id="parallelogram-base" class="border text-xl w-24 px-2 text-black bg-gray-200 rounded-md" placeholder="base" type="text">
                             <span class="ml-3">cm</span>
-                            <input id="triangle-height" class="border text-xl w-24 px-2 text-black bg-gray-200 ml-4 rounded-md" placeholder="height" type="text">
+                            <!-- parallelogram height -->
+                            <input id="parallelogram-height" class="border text-xl w-24 px-2 text-black bg-gray-200 ml-4 rounded-md" placeholder="height" type="text">
                             <span class="ml-3">cm</span>
                         </p>
-                        <p class="text-xl">Area: <span id="triangle-area" class="font-bold">0</span>cm<sup>2</sup></p>
+                        <p class="text-xl">Area: <span id="parallelogram-area" class="font-bold">0</span>cm<sup>2</sup></p>
                         <div class="card-actions w-full">
-                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellips card -->
+                <div class="card card-compact bg-base-100 shadow-xl pt-4 bg-rose-900 text-white">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body items-center mt-">
+                        <h2 class="card-title text-3xl">Ellips</h2>
+                        <p class="text-xl mb-4">Area (A) = π ab</p>
+                        <p class="mb-6">
+                            <!-- ellips first -->
+                            <input id="ellipse-major-redius" class="border text-xl w-24 px-2 text-black bg-gray-200 rounded-md" placeholder="learge" type="text">
+                            <span class="ml-3">cm</span>
+                            <!-- ellips short -->
+                            <input id="ellipse-minor-redius" class="border text-xl w-24 px-2 text-black bg-gray-200 ml-4 rounded-md" placeholder="short" type="text">
+                            <span class="ml-3">cm</span>
+                        </p>
+                        <p class="text-xl">Area: <span id="ellipse-area" class="font-bold">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions w-full">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
